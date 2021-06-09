@@ -26,8 +26,8 @@ public class RoverBuilder {
         return this;
     }
 
-    public MarsRover build() {
-        return new MarsRover(new Coords(planetBuilder.build(), landingPosition), direction);
+    public MarsRoverController build() {
+        return new MarsRoverController(new Coords(planetBuilder.build(), landingPosition), direction);
     }
 
 }
